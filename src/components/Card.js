@@ -17,7 +17,11 @@ const Card = (props) => {
         <div>
           <div className="card-body">
               <span class="badge rounded-pill bg-danger">Tipo</span>
-              <span class="badge rounded-pill bg-primary"  key={pokemon.types[0].name}>{pokemon.types[0].type.name}</span>
+              {pokemon.types.map((type, index) =>{
+                  return <div> <span class="badge rounded-pill bg-primary"  key={index}>{type.type.name}</span>
+                         </div>
+              })}
+              
           </div>
            
         </div>

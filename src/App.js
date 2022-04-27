@@ -25,7 +25,7 @@ export default function App() {
      })
      const results = await Promise.all(promise);
      setPokemons(results);
-    // console.log(results);
+     console.log(results);
     }
     catch(err)
     {
