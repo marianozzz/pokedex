@@ -12,7 +12,7 @@ export const searchPokemn = async (pokemon) =>{
     }
 };
 
-export const getPokemons = async (limit=10, offset=0) =>
+export const getPokemons = async (limit=25, offset=0) =>
 {
     try
     {
